@@ -1,1 +1,42 @@
-// Specific CSS for your home-page
+.container{
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 8px 8px 4px rgba(212, 212, 212, 0.2);
+  text-align: center;
+}
+
+.movies-container{
+  padding: 10px;
+}
+
+.movie-form{
+  padding: 0 20px;
+}
+
+.card-img-top{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.index_container{
+  display: flex;
+  justify-content: center
+}
+
+.title{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-title{
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.movie-card{
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #eeeeee;
+}

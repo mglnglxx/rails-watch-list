@@ -1,0 +1,28 @@
+<h2 style="margin-top: 10px;"><%= @list.name %></h2>
+
+<div class="buttons d-flex justify-content-center">
+</div>
+
+<ul class="movies-container list-group list-unstyled container-sm flex-row justify-content-around flex-wrap align-content-between">
+  <% @list.bookmarks.each do |movie| %>
+  <div class="movie-card card row" style="width: 18rem; margin: 8px 4px">
+    <img class="card-img-top" src="<%= movie.movie.poster_url %>" alt="Card image cap">
+    <div class="card-body col">
+      <h5 class="card-title" style= "text-align: left;"><%= movie.movie.title %></h5>
+      <p class="card-text" style="text-align: left;"><%= movie.movie.overview %></p>
+      <p class="card-text" style="text-align: left;"><%= movie.movie.rating %></p>
+    </div>
+  </div>
+  <% end %>
+</ul>
+<br>
+<div class="movie-form">
+<h4 class="title">Add a movie to the list</h4>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+<br>
+<p class="btn btn-info mr-1"><%= link_to "Go back", lists_path %></p>
+</div>

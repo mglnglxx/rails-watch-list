@@ -1,15 +1,21 @@
-<br>
-<h2>Movie lists</h2>
-<div class="index_container">
-  <% @lists.each do |list| %>
-  <div class="card" style="width: 8rem; margin: 0 4px">
-    <div class="card-body">
-      <h5 class="card-title">
+<div class="index_container container" style="width: 80%; margin-top:10px">
+
+  <div class="row">
+    <div class="col-12">
+      <h3>My lists</h3>
+    </div>
+
+    <div class="col-12">
+      <div class="class">
+        <% @lists.each do |list| %>
+        <h5 class="card-title btn btn-light">
         <%= link_to list.name.capitalize, list_path(list) %></h5>
+        <% end %>
       </div>
     </div>
-  <br>
-  <% end %>
+
+    <div class="col-12">
+      <p class="btn btn-info"><%= link_to 'Add list', new_list_path %></p>
+    </div>
+  </div>
 </div>
-  <br>
-  <p class="btn btn-info"><%= link_to 'Add list', new_list_path %></p>

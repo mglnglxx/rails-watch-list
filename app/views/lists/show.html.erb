@@ -3,7 +3,7 @@
 <div class="buttons d-flex justify-content-center">
 </div>
 
-<ul class="movies-container list-group list-unstyled container-sm flex-row justify-content-around flex-wrap align-content-between">
+<ul class="movies-container list-group list-unstyled container-sm flex-row justify-content-around flex-wrap align-items-between">
   <% @list.bookmarks.each do |movie| %>
   <div class="movie-card card row" style="width: 18rem; margin: 8px 4px">
     <img class="card-img-top" src="<%= movie.movie.poster_url %>" alt="Card image cap">

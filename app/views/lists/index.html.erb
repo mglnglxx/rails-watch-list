@@ -1,12 +1,16 @@
-<div class="index_container container" style="width: 80%; margin-top:10px">
+<div class="index_container container" style="margin-top:100px">
 
   <div class="row">
     <div class="col-12">
-      <h3>My lists</h3>
+      <div class="title-line">
+        <h3 class="card-title">
+          <span span id="banner-typed-text"></span>
+        </h3>
+      </div>
     </div>
 
     <div class="col-12">
-      <div class="class">
+      <div class="lists-titles">
         <% @lists.each do |list| %>
         <h5 class="card-title btn btn-light">
         <%= link_to list.name.capitalize, list_path(list) %></h5>
@@ -15,7 +19,7 @@
     </div>
 
     <div class="col-12">
-      <p class="btn btn-info"><%= link_to 'Add list', new_list_path %></p>
+      <p class="add-button card-title btn btn-outline-primary"><%= link_to 'Add list', new_list_path %></p>
     </div>
   </div>
 </div>

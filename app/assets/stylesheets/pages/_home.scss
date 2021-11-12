@@ -4,34 +4,49 @@
   border-radius: 8px;
   box-shadow: 8px 8px 4px rgba(212, 212, 212, 0.2);
   text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .movies-container{
   padding: 10px;
+  font-family: 'Inter', sans-serif;
 }
 
 .movie-form{
   padding: 0 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 .card-img-top{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  font-family: 'Inter', sans-serif;
 }
 
 .index_container{
   display: flex;
-  justify-content: center
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .title{
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Inter', sans-serif;
 }
 
 .card-title{
-  font-size: 18px;
+  font-size: 13px;
   font-weight: bold;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-title a{
+  color: rgb(0, 183, 255);
+}
+
+.card-title a:hover{
   text-decoration: none;
 }
 
@@ -39,4 +54,35 @@
   border: 1px solid #eeeeee;
   border-radius: 8px;
   box-shadow: 1px 1px 10px #eeeeee;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.title-line{
+  padding-top: 20px;
+}
+
+.add-button{
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+.add-button a:hover{
+  color: white;
+}
+
+@media (min-width: 720px) {
+  .container{
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .container{
+    width: 30%;
+  }
 }
